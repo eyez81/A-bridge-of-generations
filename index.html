@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1c2b26">
+  <meta name="description" content="פעילויות, קלפי שיחה ומדריך מעשי לחיזוק הקשר בין סבים, סבתות ונכדים.">
+  <title>גשר של דורות</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">דילוג לתוכן הראשי</a>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="גשר של דורות — דף הבית">
+      <span class="brand-rings" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><strong>גשר של דורות</strong><small>סבים, סבתות ונכדים</small></span>
+    </a>
+    <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">
+      <span aria-hidden="true">☰</span><span>תפריט</span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="ניווט ראשי">
+      <a href="#home" data-route="home">בית</a>
+      <a href="#today" data-route="today">מה נעשה היום?</a>
+      <a href="#cards" data-route="cards">קלפי שיחה</a>
+      <a href="#projects" data-route="projects">פרויקטים משותפים</a>
+      <a href="#guide" data-route="guide">המדריך</a>
+    </nav>
+    <div class="a11y-tools" aria-label="אפשרויות תצוגה">
+      <button type="button" id="fontButton" aria-pressed="false" title="הגדלת הכתב">א<span aria-hidden="true">+</span><span class="sr-only">הגדלת הכתב</span></button>
+      <button type="button" id="contrastButton" aria-pressed="false" title="ניגודיות גבוהה"><span aria-hidden="true">◐</span><span class="sr-only">ניגודיות גבוהה</span></button>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="page active" id="page-home" data-page="home" aria-labelledby="home-title">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">לא רק לקרוא — לעשות יחד</p>
+          <h1 id="home-title">כל מפגש קטן יכול להפוך לזיכרון גדול</h1>
+          <p class="hero-lede">בחרו פעילות שמתאימה בדיוק לזמן, לגיל ולמקום שלכם — או פתחו קלף שיחה ותנו לסיפור להתחיל.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#today">מצאו פעילות להיום <span aria-hidden="true">←</span></a>
+            <a class="button secondary" href="#cards">פתחו קלף שיחה</a>
+          </div>
+          <p class="privacy-note"><span aria-hidden="true">✓</span> ללא הרשמה, ללא העלאת תמונות וללא שמירת מידע.</p>
+        </div>
+        <div class="tree-visual" aria-label="הקשר גדל כמו טבעות עץ — כל שלב נבנה על קודמו">
+          <div class="tree-rings" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><span>ביחד</span></div>
+          <ul>
+            <li><b>0–2</b> נוכחות וביטחון</li>
+            <li><b>3–5</b> משחק ודמיון</li>
+            <li><b>6–9</b> סקרנות ולמידה</li>
+            <li><b>10–13</b> עצמאות והקשבה</li>
+            <li><b>14–18</b> שיחה של שווים</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-shell quick-start" aria-labelledby="quick-title">
+        <div class="section-heading">
+          <p class="eyebrow">מאיפה מתחילים?</p>
+          <h2 id="quick-title">שלוש דרכים להיות יחד</h2>
+        </div>
+        <div class="feature-grid">
+          <a class="feature-card featured" href="#today">
+            <span class="feature-icon" aria-hidden="true">✦</span><span class="feature-number">01</span>
+            <h3>מה נעשה יחד היום?</h3><p>כמה דקות יש לכם, בני כמה הנכדים והאם אתם קרובים או רחוקים?</p><strong>מצאו פעילות <span aria-hidden="true">←</span></strong>
+          </a>
+          <a class="feature-card" href="#cards">
+            <span class="feature-icon" aria-hidden="true">״</span><span class="feature-number">02</span>
+            <h3>קלפי שיחה</h3><p>שאלות שמדלגות מעל ה״מה נשמע?״ ומזמינות זיכרון, צחוק והיכרות.</p><strong>הגרילו שאלה <span aria-hidden="true">←</span></strong>
+          </a>
+          <a class="feature-card" href="#projects">
+            <span class="feature-icon" aria-hidden="true">◇</span><span class="feature-number">03</span>
+            <h3>פרויקט משפחתי</h3><p>מתכון, עץ משפחה, מפת ילדות או קפסולת זמן — תוצר שנשאר אתכם.</p><strong>בחרו פרויקט <span aria-hidden="true">←</span></strong>
+          </a>
+        </div>
+      </div>
+
+      <div class="section-shell promise-strip" aria-label="עקרונות האפליקציה">
+        <div><span aria-hidden="true">●</span><strong>פעילות שמתאימה לכם</strong><small>לפי גיל, זמן ומקום</small></div>
+        <div><span aria-hidden="true">●</span><strong>שיחה בגובה העיניים</strong><small>בלי מבחן ובלי לחץ</small></div>
+        <div><span aria-hidden="true">●</span><strong>קשר שנבנה בהדרגה</strong><small>גם בעשר דקות</small></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-today" data-page="today" aria-labelledby="today-title">
+      <div class="page-intro section-shell">
+        <p class="eyebrow">פעילות שמתאימה לרגע הזה</p>
+        <h1 id="today-title">מה נעשה יחד היום?</h1>
+        <p>בחרו ארבעה דברים קטנים. אנחנו נציע פעילות אחת שאפשר להתחיל מיד — בלי הרשמה ובלי לשמור מידע.</p>
+      </div>
+      <div class="section-shell generator-layout">
+        <form class="filter-panel" id="activityForm">
+          <fieldset><legend><span>1</span> בני כמה הנכד או הנכדה?</legend><div class="choice-grid" id="ageChoices"></div></fieldset>
+          <fieldset><legend><span>2</span> כמה זמן יש לכם?</legend><div class="choice-grid compact" id="timeChoices"></div></fieldset>
+          <fieldset><legend><span>3</span> איפה נפגשים?</legend><div class="choice-grid compact" id="modeChoices"></div></fieldset>
+          <fieldset><legend><span>4</span> מה מתחשק לכם?</legend><select id="typeSelect" name="type"><option value="any">הפתיעו אותנו</option><option value="talk">שיחה וסיפור</option><option value="create">יצירה</option><option value="cook">בישול</option><option value="play">משחק</option><option value="move">תנועה וטיול</option><option value="digital">מרחוק ודיגיטל</option></select></fieldset>
+          <button class="button primary wide" type="submit">מצאו לנו פעילות <span aria-hidden="true">←</span></button>
+        </form>
+        <div class="result-panel" id="activityResult" aria-live="polite">
+          <div class="result-empty"><span aria-hidden="true">✦</span><h2>הפעילות שלכם תופיע כאן</h2><p>בחרו את האפשרויות שמתאימות לכם ולחצו על הכפתור.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="page-cards" data-page="cards" aria-labelledby="cards-title">
+      <div class="page-intro section-shell centered">
+        <p class="eyebrow">לפעמים שאלה אחת פותחת עולם</p>
+        <h1 id="cards-title">קלפי שיחה בין הדורות</h1>
+        <p>בחרו גיל ונושא, הניחו את הטלפון ביניכם והתחלפו בתשובות. אין תשובה נכונה.</p>
+      </div>
+      <div class="section-shell cards-tool">
+        <div class="inline-filters">
+          <label>גיל הנכד<select id="cardAge"><option value="all">כל גיל</option><option value="3-5">3–5</option><option value="6-9">6–9</option><option value="10-13">10–13</option><option value="14-18">14–18</option></select></label>
+          <label>נושא<select id="cardTopic"><option value="all">הפתיעו אותנו</option><option value="childhood">ילדות וזיכרונות</option><option value="family">משפחה ומסורת</option><option value="dreams">חלומות ועתיד</option><option value="fun">כיף ודמיון</option><option value="values">ערכים ולמידה</option></select></label>
+        </div>
+        <article class="conversation-card" id="conversationCard" aria-live="polite">
+          <span class="quote-mark" aria-hidden="true">״</span><span class="card-label">קלף ראשון</span>
+          <p>מה היה המשחק שהכי אהבתם לשחק כשהייתם בגיל שלי?</p>
+          <small>אחרי התשובה: נסו למצוא דבר אחד שדומה ודבר אחד ששונה.</small>
+        </article>
+        <div class="card-actions"><button class="button primary" id="newCardButton" type="button">שאלה אחרת</button><button class="button secondary" id="swapCardButton" type="button">החליפו תפקידים</button></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-projects" data-page="projects" aria-labelledby="projects-title">
+      <div class="page-intro section-shell">
+        <p class="eyebrow">משהו שבונים יחד</p><h1 id="projects-title">פרויקטים משפחתיים</h1>
+        <p>כל פרויקט מסתיים בתוצר פיזי שאפשר לשמור בבית. האפליקציה רק מלווה אתכם — היא אינה אוספת או שומרת דבר.</p>
+      </div>
+      <div class="section-shell project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="page" id="page-project" data-page="project" aria-labelledby="project-title">
+      <div class="section-shell project-detail" id="projectDetail"></div>
+    </section>
+
+    <section class="page" id="page-guide" data-page="guide" aria-labelledby="guide-title">
+      <div class="page-intro section-shell">
+        <p class="eyebrow">ידע שמסייע לקשר</p><h1 id="guide-title">המדריך לסבים ולסבתות</h1>
+        <p>מידע מעשי לפי נושא וגיל. אפשר לקרוא מדור שלם או לפתוח רק את השאלה שמעסיקה אתכם כרגע.</p>
+      </div>
+      <div class="section-shell guide-layout">
+        <nav class="guide-nav" id="guideNav" aria-label="נושאי המדריך"></nav>
+        <article class="guide-content" id="guideContent" aria-live="polite"></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>גשר של דורות</strong><p>כל מפגש קטן יכול להפוך לזיכרון גדול.</p></div>
+    <p>התוכן כללי ואינו מחליף ייעוץ רפואי, התפתחותי או משפחתי המותאם למצבכם.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
