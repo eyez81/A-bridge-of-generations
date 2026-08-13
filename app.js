@@ -104,6 +104,8 @@ const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
 let lastActivity = null;
 let lastCard = -1;
 let currentGuide = "relationship";
+const FONT_LEVELS = [0.8, 1, 1.2, 1.4, 1.6];
+let fontLevelIndex = 1;
 
 function createChoice(container, name, value, label, checked=false){
   const wrap=document.createElement("div");wrap.className="choice-option";
@@ -158,6 +160,14 @@ $("#activityForm").addEventListener("submit",e=>{e.preventDefault();generateActi
 $("#newCardButton").addEventListener("click",showNewCard);$("#swapCardButton").addEventListener("click",()=>{const card=$("#conversationCard");const small=$("small",card);small.textContent="עכשיו מי שענה ראשון שואל, והאחר עונה. נסו לא לקטוע.";});
 $("#cardAge").addEventListener("change",showNewCard);$("#cardTopic").addEventListener("change",showNewCard);
 $("#menuButton").addEventListener("click",e=>{const open=$("#mainNav").classList.toggle("open");e.currentTarget.setAttribute("aria-expanded",String(open));});
-$("#fontButton").addEventListener("click",e=>{const on=document.body.classList.toggle("large-text");e.currentTarget.setAttribute("aria-pressed",String(on));});
+function updateFontSize(){
+  const scale=FONT_LEVELS[fontLevelIndex];
+  document.documentElement.style.setProperty("--font-scale",String(scale));
+  $("#fontSizeLabel").textContent=`${Math.round(scale*100)}%`;
+  $("#fontDecrease").disabled=fontLevelIndex===0;
+  $("#fontIncrease").disabled=fontLevelIndex===FONT_LEVELS.length-1;
+}
+$("#fontDecrease").addEventListener("click",()=>{if(fontLevelIndex>0){fontLevelIndex-=1;updateFontSize();}});
+$("#fontIncrease").addEventListener("click",()=>{if(fontLevelIndex<FONT_LEVELS.length-1){fontLevelIndex+=1;updateFontSize();}});
 $("#contrastButton").addEventListener("click",e=>{const on=document.body.classList.toggle("high-contrast");e.currentTarget.setAttribute("aria-pressed",String(on));});
-window.addEventListener("hashchange",route);route();
+window.addEventListener("hashchange",route);updateFontSize();route();

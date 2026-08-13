@@ -8,7 +8,7 @@
   <title>גשר של דורות</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,7 +16,6 @@
 
   <header class="topbar">
     <a class="brand" href="#home" aria-label="גשר של דורות — דף הבית">
-      <span class="brand-rings" aria-hidden="true"><i></i><i></i><i></i></span>
       <span><strong>גשר של דורות</strong><small>סבים, סבתות ונכדים</small></span>
     </a>
     <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">
@@ -29,8 +28,10 @@
       <a href="#projects" data-route="projects">פרויקטים משותפים</a>
       <a href="#guide" data-route="guide">המדריך</a>
     </nav>
-    <div class="a11y-tools" aria-label="אפשרויות תצוגה">
-      <button type="button" id="fontButton" aria-pressed="false" title="הגדלת הכתב">א<span aria-hidden="true">+</span><span class="sr-only">הגדלת הכתב</span></button>
+    <div class="a11y-tools" aria-label="שינוי גודל הכתב ואפשרויות תצוגה">
+      <button type="button" id="fontDecrease" title="הקטנת הכתב"><span aria-hidden="true">א−</span><span class="sr-only">הקטנת הכתב</span></button>
+      <output id="fontSizeLabel" aria-live="polite" aria-label="גודל הכתב">100%</output>
+      <button type="button" id="fontIncrease" title="הגדלת הכתב"><span aria-hidden="true">א+</span><span class="sr-only">הגדלת הכתב</span></button>
       <button type="button" id="contrastButton" aria-pressed="false" title="ניגודיות גבוהה"><span aria-hidden="true">◐</span><span class="sr-only">ניגודיות גבוהה</span></button>
     </div>
   </header>
@@ -47,16 +48,6 @@
             <a class="button secondary" href="#cards">פתחו קלף שיחה</a>
           </div>
           <p class="privacy-note"><span aria-hidden="true">✓</span> ללא הרשמה, ללא העלאת תמונות וללא שמירת מידע.</p>
-        </div>
-        <div class="tree-visual" aria-label="הקשר גדל כמו טבעות עץ — כל שלב נבנה על קודמו">
-          <div class="tree-rings" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><span>ביחד</span></div>
-          <ul>
-            <li><b>0–2</b> נוכחות וביטחון</li>
-            <li><b>3–5</b> משחק ודמיון</li>
-            <li><b>6–9</b> סקרנות ולמידה</li>
-            <li><b>10–13</b> עצמאות והקשבה</li>
-            <li><b>14–18</b> שיחה של שווים</li>
-          </ul>
         </div>
       </div>
 
